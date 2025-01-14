@@ -1,5 +1,5 @@
 Echipa:
-Nitu Eriko Laurentiu
+Nitu Eriko Laurentiu,
 Zgreaban Francesca Rosemarie
 
 "Sort Yourself" este un site web care prezintă diferiti algoritmi de sortare,
