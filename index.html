@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Yourself</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: white; padding: 20px; background-color: rgba(0, 0, 0, 0.6); border-radius: 10px;">Sort Yourself</h1>
+        <p class="mini-background">Choose a sorting category to visualize different algorithms!</p>
+    </header>
+    
+    <main>
+        <div id="category-buttons">
+            <button class="tab-button number-sorting" onclick="showCategory('number-sorting')">Number Sorting</button>
+            <button class="tab-button string-sorting" onclick="showCategory('string-sorting')">String Sorting Alphabetically</button>
+        </div>
+        
+        <br>
+
+        <div id="number-sorting" class="category-content">
+            <h2>Number Sorting</h2>
+            <br>
+            <p>Select an algorithm and enter numbers separated by commas.</p>
+            <br>
+            <select id="numberAlgorithmSelect">
+                <option value="bubble">Bubble Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="bogo">Bogo Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="heap">Heap Sort</option>
+            </select>
+            <input type="text" id="numberInput" placeholder="Ex: 8, 2, 20, 89">
+            <button onclick="runNumberSort()">Sort Numbers</button>
+            <br>
+            <div id="numberVisualization" class="visualization"></div>
+            <div id="algorithmDetails"></div> <!-- Algorithm and video content -->
+        </div>
+
+        <br>
+
+        <div id="string-sorting" class="category-content">
+            <h2>String Sorting Alphabetically</h2>
+            <br>
+            <p>Enter a list of strings separated by commas to sort them alphabetically.</p>
+            <br>
+            <input type="text" id="stringInput" placeholder="Ex: ana, mere, hai">
+            <button onclick="runStringSort()">Sort Strings</button>
+            <br>
+            <div id="stringVisualization" class="visualization"></div>
+            <div id="algorithmDetails">
+                    <pre><code id="algorithmCode"></code></pre>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

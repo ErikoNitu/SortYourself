@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+#algorithmDetails pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+#algorithmDetails iframe {
+    width: 560px;
+    height: 315px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#algorithmDetails .algorithm-description {
+    max-width: 400px;
+    text-align: left;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-button {
+    margin: 5px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#category-buttons .tab-button.number-sorting {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+#category-buttons .tab-button.number-sorting:hover {
+    background-color: rgba(255, 99, 71, 1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#category-buttons .tab-button.string-sorting {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+#category-buttons .tab-button.string-sorting:hover {
+    background-color: rgba(30, 144, 255, 1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(91, 54, 204, 0.8);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input {
+    background-color: rgba(149, 117, 244, 0.7);
+    color: black;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+main {
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(94, 26, 26);
+}
+
+main h1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 2em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+main p {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 10px;
+    color: white;
+}
+
+#algorithmDetails {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#algorithmDetails iframe {
+    width: 560px;
+    height: 315px;
+    margin-right: 20px;
+}
+
+#algorithmDetails .algorithm-description {
+    max-width: 400px;
+    text-align: left;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.visualization {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+}
