@@ -25,7 +25,7 @@ async function runVisualization(inputId, algorithm, visualizationId) {
     const array = input.split(',').map(x => isNaN(x) ? x.trim() : Number(x));
     const container = document.getElementById(visualizationId);
     container.innerHTML = '';
-    const response = await fetch('http://127.0.0.1:5000/sort', {
+    const response = await fetch('/sort', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ array: array, algorithm: algorithm, type: typeof array[0] === 'number' ? 'number' : 'string' })
